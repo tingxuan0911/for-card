@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #canvas {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        div {
+            width: 200px;
+            box-sizing: border-box;
+            padding: 0 10px;
+            margin: 10px;
+            cursor: pointer;
+            margin: 10px;
+            background-color: burlywood;
+        }
+
+        div:active {
+            background-color: gray;
+        }
+
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="canvas">
+
+        <div>
+            <h3>影片標題1</h3>
+            <img src="https://truth.bahamut.com.tw/guildwiki/B/edf69f400a5b64046fa3abb0d2102e96.JPG" alt="">
+            <p>打我啊</p>
+        </div>
+    </section>
+
+
+
+
+
+    <script>
+        // var canvas = document.querySelector('#canvas')
+        // canvas.innerHTML = '<div></div><div></div>'
+
+        // for (let index = 0; index < 10; index++) {
+        //     console.log('haha')
+        // }
+
+        // 用for迴圈 印出20~59
+        // for (let index = 0; index < 40; index++) {
+        //     console.log(index + 20)
+        // }
+
+        // var car=['aaa-1234','bbb-1234','ccc-1234','ddd-1234']
+        // for (let index = 0; index <4; index++) {
+        //     console.log(car[index]);
+
+        // }
+        var canvas = document.querySelector('#canvas')
+
+        for (let index = 0; index < 100; index++) {
+            canvas.innerHTML = canvas.innerHTML +
+             `<div>
+                <h3>影片標題` + (index+1) +`</h3>
+                <img src="https://truth.bahamut.com.tw/guildwiki/B/edf69f400a5b64046fa3abb0d2102e96.JPG" alt="">
+                <p>打我啊</p>
+            </div>`
+
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
